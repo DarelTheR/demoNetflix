@@ -14,9 +14,21 @@ public class MediaService {
 
 	@Autowired
 	MediaRepository mediaRepository;
-	
+
 	public List<Media> getAllMedias(){
 
 		return mediaRepository.findAll();
+	}
+
+	public Media saveMedia(Media media) {
+		Media saveMedia = mediaRepository.save(media);
+		return saveMedia;
+	}
+	public Media deleteMedia(Media media) {
+		mediaRepository.delete(media);
+		return media;
+
+
+
 	}
 }

@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PremierserviceApplication {
 
 	public static void main(String[] args) {
+		
+		
 		SpringApplication.run(PremierserviceApplication.class, args);
 	}
 
